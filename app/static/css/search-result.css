@@ -1,0 +1,33 @@
+.col-padding {
+  padding-top: 50px;
+}
+.summary {
+  margin-top: 12px;
+  height: 70px;
+  padding-top: 8px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  border-bottom: 1px solid #cccccc;
+  border-top: 1px solid #cccccc;
+
+}
+#pagination {
+  margin-top: 80px;
+}
+#pagination li {
+  background-color: transparent;
+}
+#pagination a {
+  color: #826762;
+}
+#pagination li.active > a {
+  color: #FFFFFF;
+}
+#pagination li > a:hover {
+  color: #826762;
+}
+#pagination > .active > a {
+  background-color: #826762;
+  border-color: #826762;
+  color: #ffffff;
+}

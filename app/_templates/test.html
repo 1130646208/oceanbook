@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    王双星{{r.age}}
+    {# 注释 #}
+    {# 条件判断 #}
+    {% if r.age == 18 %}
+        年龄是18岁
+    {% elif r.age > 18 %}
+        太老了
+    {% else %}
+        太年轻了
+    {% endif %}
+    {# 遍历字典 #}
+    {% for key, value in r.items() %}
+        {{ key }}
+        {{ value }}
+        <div style="height: 100px; width: 100px; background: #9C1A1C"></div>
+    {% endfor %}
+    {# 读取列表 #}
+    {% for foo in [1, 2, 3] %}
+        {{ foo }}
+    {% endfor %}
+
+    {# 读取闪现消息message作用域是一个块 #}
+    {% set messages = get_flashed_messages() %}
+    {{ messages }}
+    {# message2作用域是with语句 #}
+    {% with message2 = get_flashed_messages() %}
+        {{ message2 }}
+    {% endwith %}
+
+</body>
+</html>
