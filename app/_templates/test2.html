@@ -1,8 +1,0 @@
-{# 测试模板继承 #}
-
-{% extends 'layout.html' %}
-{% block content %}
-    {{ super() }}
-    这样就可以将文字填充到layout中了<br>
-    再用super()就可以保留layout中同名块中的内容了
-{% endblock %}

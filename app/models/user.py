@@ -135,7 +135,7 @@ class User(UserMixin, Base):
 
     def can_send_drift(self):
         # 检测是否能够发起交易:
-        # 2 鱼豆数量必须足够
+        # 2 豆数量必须足够
         # 3 每索取两本书, 必须送出一本书
 
         # 鱼豆不足
